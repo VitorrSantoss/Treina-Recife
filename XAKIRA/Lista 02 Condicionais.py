@@ -1,25 +1,15 @@
 # EXERCICIO 01:
 num = int(input('Digite um número de (1 a 10): '))
-if num == 1:
-    print('1 -> Um')
-elif num == 2:
-    print('2 -> Dois')
-elif num == 3:
-    print('3 -> Três')
-elif num == 4:
-    print('4 -> Quatro')
-elif num == 5:
-    print('5 -> Cinco')
-elif num == 6:
-    print('6 -> Seis')
-elif num == 7:
-    print('7 -> Sete')
-elif num == 8:
-    print('8 -> Oito')
-elif num == 9:
-    print('9 -> Nove')
-elif num == 10:
-    print('10 -> Dez')
+if num == 1: print('1 -> Um')
+elif num == 2: print('2 -> Dois')
+elif num == 3: print('3 -> Três')
+elif num == 4: print('4 -> Quatro')
+elif num == 5: print('5 -> Cinco')
+elif num == 6: print('6 -> Seis')
+elif num == 7: print('7 -> Sete')
+elif num == 8: print('8 -> Oito')
+elif num == 9: print('9 -> Nove')
+elif num == 10: print('10 -> Dez')
 else: print('Número Inválido.')
 
 # EXERCICIO 02:
@@ -34,6 +24,27 @@ elif soma == 10:
     print(' Sua média foi {} - APROVADO COM DISTINÇÃO!'.format(soma))
 
 # EXERCICIO 03:
+contasim = 0
+p = input('Telefonou para vítima? ')
+if p == 'sim':
+    contasim = contasim + 1
+p2 = input('Esteve no local do crime? ')
+if p2 == 'sim':
+    contasim = contasim + 1
+p3 = input('Mora perto da vítima? ')
+if p3 == 'sim':
+    contasim = contasim + 1
+p4 = input('Devia para vítima? ')
+if p4 == 'sim':
+    contasim = contasim + 1
+p5 = input('Já trabalhou com a vítima? ')
+if p5 == 'sim':
+    contasim = contasim + 1
+if contasim == 2:
+    print('SUSPEITA')
+elif contasim == 3 or contasim == 4:
+    print('ASSASINO')
+else: print('INOCENTE')
 
 # EXERCICIO 04:
 num = int(input('Digite um número: '))
